@@ -1,0 +1,196 @@
+@keyframes appear{
+from{
+opacity: 0%;
+}
+to{
+opacity:80%;
+}
+}
+@keyframes appear_text{
+from{
+opacity: 0%;
+}
+to{
+opacity: 100%;
+}
+}
+@keyframes animate_image_background{
+
+20%{
+background-image: url('images_sw/sw_image_1.png');
+}
+40%{
+background-image: url('images_sw/sw_image_2.png');
+}
+60%{
+background-image: url('images_sw/sw_image_3.png');
+}
+80%{
+background-image: url('images_sw/sw_image_4.png');
+}
+100%{
+background-image: url('images_sw/sw_image_5.png');
+}
+}
+
+section.image1 {
+background-image: url('images_sw/sw_image_1.png');
+height: 800px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: -500px 0px 0px 0px;
+
+animation-name:animate_image_background;
+animation-direction: alternate-reverse ;
+animation-duration: 30s ;
+animation-fill-mode: forwards;
+animation-iteration-count:infinite ;
+animation-play-state:running ;
+-moz-animation-timing-function: ease-in-out;
+
+}
+body {
+margin: 0;
+font-family: Roboto, sans-serif;
+height: 100%;
+background-color: rgb(0, 0, 0);
+}
+
+#header {
+background-color: rgb(0, 0, 0);
+padding: 70px 50px 50px 50px;
+opacity: 80%;
+animation-name: appear;
+animation-duration: 1s;
+
+}
+
+#logo {
+margin-top: -60px;
+width: 220px;
+height: 100px;
+float: right;
+
+}
+
+#header nav {
+float: left;
+margin-right: -20px;
+margin-top: -30px;
+}
+
+#header nav a {
+display: inline-block;
+padding: 10px 20px;
+font-size: 16px;
+color: rgb(255, 255, 255);
+text-decoration: none;
+transition: .1s ease-in-out;
+
+}
+#header nav a:hover {
+color: rgb(0, 153, 255);
+animation-duration: 1s;
+animation-fill-mode: both;
+transition: .3s ease-in-out;
+}
+
+.big_text{
+color: #ffffff;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+font-size: 30pt;
+letter-spacing: 4px;
+animation-name: appear_text;
+animation-duration: 2s;
+animation-delay: 1s;
+animation-fill-mode: both;
+padding-top: 0px;
+
+}
+.center_text{
+/* text-align: center; */
+margin-top: -30px;
+line-height: 25px;
+color: #ffffff;
+letter-spacing: 0px;
+animation-name: appear_text;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-fill-mode: both;
+}
+#footer {
+background-color: rgb(20, 20, 20);
+color: rgb(121, 121, 121);
+padding: 25px 50px;
+font-size: 14px;
+text-align: center;
+margin: 0px 0px 0px 0px;
+opacity:80%;
+}
+
+.box_log{
+border-radius: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding:0px 50px 50px 50px;
+width: 600px;
+height: 400px;
+border: 0px solid #ffffff;
+background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(63, 63, 63) 100%);
+
+}
+
+.box_log_up{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.rejestracja{
+color: #ffffff;
+transition: .1s ease-in-out;
+}
+.rejestracja:hover{
+color: rgb(150, 46, 46);
+transition: .1s ease-in-out;
+}
+input[type="submit"]{
+background-color: #ffffff;
+border: 1px solid #000000;
+color: black;
+padding:10px;
+border-radius: 5px;
+-webkit-transition: .3s ease-in-out;
+animation-name: appear_text;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-fill-mode: both;
+
+}
+input[type="submit"]:hover{
+background-color: rgb(54, 54, 54);
+border: 1px solid #000000;
+color: rgb(255, 255, 255);
+padding:10px;
+border-radius: 5px;
+-webkit-transition: .3s ease-in-out;
+
+}
+
+input[type="text"]{
+animation-name: appear_text;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-fill-mode: both;
+}
+
+input[type="password"]{
+animation-name: appear_text;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-fill-mode: both;
+}
